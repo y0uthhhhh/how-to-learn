@@ -6,7 +6,11 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.position_absolute {
+  position: absolute;
 }
 
 .header {
@@ -14,12 +18,66 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.logo {
+  width: 228px;
+  height: 32px;
+  z-index: 2;
+}
+
+.logo_place_header {
+  left: 64px;
+  top: 30px;
+}
+
+.header__title {
+  width: 730px;
+  align-self: center;
+  z-index: 2;
+  margin-left: 64px;
+  font-weight: 600;
+  font-size: 102px;
+  line-height: 96px;
+}
+
+.header__subtitle {
+  width: 388px;
+  left: 64px;
+  bottom: 30px;
+  z-index: 2;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.header__subtitle_link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.header__subtitle_link::after {
+  content: " \2192";
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  bottom: 0;
+  right: 0;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  top: 64px;
+  right: 0;
+  z-index: -1;
+  background-color: #2f80ed;
 }
 
 /* и элемента с модификатором вида ключ-значение */
