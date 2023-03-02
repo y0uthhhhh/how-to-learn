@@ -1,3 +1,15 @@
+div {
+  border: 1px solid red;
+}
+
+p {
+  border: 1px solid green;
+}
+
+h3 {
+  border: 1px solid blue;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -21,6 +33,7 @@
   position: relative;
   display: flex;
   overflow: hidden;
+  background-color: #f2f2f2;
 }
 
 .logo {
@@ -68,6 +81,7 @@
   height: 608px;
   bottom: 0;
   right: 0;
+  z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -76,7 +90,7 @@
   width: 568px;
   top: 64px;
   right: 0;
-  z-index: -1;
+  z-index: 0;
   background-color: #2f80ed;
 }
 
@@ -86,4 +100,47 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+.two-columns {
+  width: 80%;
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  width: 175px;
+  margin: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  width: 784px;
+  width: 80%;
+}
+
+.main-text__phrases {
+  margin: 0 0 30px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.main-text__phrases:last-of-type {
+  margin: 0;
+}
+
+.span__text_bold {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
 }
