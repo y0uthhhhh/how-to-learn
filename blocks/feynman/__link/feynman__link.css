@@ -1,0 +1,16 @@
+.feynman__link {
+    color: #2f80ed;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    right: 48px;
+    transition: .5s;
+    z-index: 3;
+  }
+  
+.feynman__link:hover {
+    opacity: .6;
+  }
